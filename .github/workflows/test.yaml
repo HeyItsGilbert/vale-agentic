@@ -34,5 +34,5 @@ jobs:
       shell: bash
       
     - name: Cucumber
-      run: bundle exec rake knapsack:cucumber
+      run: cucumber
       shell: bash
