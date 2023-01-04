@@ -34,5 +34,5 @@ jobs:
       shell: bash
       
     - name: Cucumber
-      run: cucumber
+      run: bundle exec cucumber
       shell: bash
