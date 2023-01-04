@@ -27,10 +27,7 @@ jobs:
 
     - name: Install pip requirements
       shell: bash
-      run: |
-        pip install yamllint
-        pip install markdata
-        pip install pyyaml
+      run: pip install -r requirements.txt
 
     - name: YAML Lint
       run: yamllint -c '.yamllint.yml' agentic
