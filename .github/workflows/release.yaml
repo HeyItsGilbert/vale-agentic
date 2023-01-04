@@ -1,7 +1,8 @@
 name: Releases
 
-on: 
-  tags:
+on:
+  push:
+    tags:
   workflow_dispatch:
 
 jobs:
