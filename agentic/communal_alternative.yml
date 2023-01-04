@@ -1,0 +1,18 @@
+extends: substitution
+message: Consider using '%s' instead of '%s'
+level: warning
+ignorecase: true
+# swap maps tokens in form of bad: good
+swap:
+  help: assist
+  SME: Service owner
+  caring: dynamic
+  considerate: driver
+  thoughtful: energetic
+  dedicated: leader
+  tireless: bold
+  helped: drove
+  facilitated: lead
+  collaborated: created
+  was: built
+  is: sold

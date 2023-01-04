@@ -1,0 +1,22 @@
+extends: existence
+message: Consider replacing '%s'. It is communal vs agentic.
+level: warning
+code: false
+ignorecase: true
+tokens:
+    - improved
+    - team player
+    - friendly
+    - good with
+    - commited
+    - worked with
+    - maybe
+    - eventualyy
+    - helping
+    - with me
+    - seems
+    - despite
+    - helped to
+    - managed to
+    - eventually
+    - actually
