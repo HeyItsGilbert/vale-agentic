@@ -1,6 +1,7 @@
-Hi.
+This is some agentic markdown.
 
-We'd like to hire an excellent JavaScript developer, please.
-If you're good at JavaScript then please apply.
+Communal phrasing is not bad. It is however perceived as weaker.
 
-Thank you.
+I boldly created this to catch my own communal phrases.
+
+This is especially useful during performance reviews.
