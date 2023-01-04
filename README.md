@@ -6,9 +6,9 @@ This repository contains a [Vale-compatible](https://github.com/errata-ai/vale) 
 
 ## Getting Started
 
-> :exclamation: Joblint requires Vale >= **1.7.0**. :exclamation:
+> :exclamation: vale-agentic requires Vale >= **1.7.0**. :exclamation:
 
-Download the [latest release](https://github.com/errata-ai/Joblint/releases), copy the "Joblint" directory to your `StylesPath`, and include it in your configuration file:
+Download the [latest release](https://github.com/HeyItsGilbert/vale-agentic/releases), copy the "agentic" directory to your `StylesPath`, and include it in your configuration file:
 
 ```ini
 # This goes in a file named either `.vale.ini` or `_vale.ini`.
