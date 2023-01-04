@@ -1,7 +1,7 @@
 name: Releases
 
 on: 
-  push:
+  tags:
   workflow_dispatch:
 
 jobs:
@@ -14,7 +14,7 @@ jobs:
       with:
         type: 'zip'
         filename: 'agentic.zip'
-        directory: 'agentic'
+        path: 'agentic'
     - name: Upload Release
       uses: ncipollo/release-action@v1
       with:
