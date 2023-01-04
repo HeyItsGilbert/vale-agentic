@@ -14,10 +14,12 @@ jobs:
       with:
         type: 'zip'
         filename: 'agentic.zip'
-        path: 'agentic'
-        exclusions: '*.git* /*node_modules/* .editorconfig'
+        directory: 'agentic'
     - name: Upload Release
       uses: ncipollo/release-action@v1
       with:
         artifacts: "agentic.zip"
         token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Latest tag
+      uses: EndBug/latest-tag@v1.5.1
+
