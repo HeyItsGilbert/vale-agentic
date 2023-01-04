@@ -3,6 +3,7 @@ name: Releases
 on:
   push:
     tags:
+    branch: []
   workflow_dispatch:
 
 jobs:
