@@ -21,6 +21,7 @@ jobs:
       pip install yamllint
       pip install markdata
       pip install pyyaml
+      
     - name: YAML Lint
       run: yamllint -c '.yamllint.yml' agentic
     - name: Cucumber
