@@ -16,9 +16,9 @@ jobs:
         export PATH=./bin:"$PATH"
 
     - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.0'
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+      with:
+        ruby-version: '3.0'
+        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
 
     - uses: actions/setup-python@v4
       with:
