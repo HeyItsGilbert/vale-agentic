@@ -1,6 +1,6 @@
 # vale-agentic [![Build Status](https://img.shields.io/github/actions/workflow/status/HeyItsGilbert/vale-agentic/test.yaml?branch=main)](https://github.com/HeyItsGilbert/vale-agentic/actions/workflows/test.yaml) ![Vale version](https://img.shields.io/badge/vale-%3E%3D%20v1.7.0-blue.svg) ![license](https://img.shields.io/github/license/mashape/apistatus.svg)
 
-A [Vale](https://github.com/errata-ai/vale) style package that helps you write more assertive, action-oriented language by identifying and suggesting alternatives to communal phrasing.
+A [Vale](https://github.com/errata-ai/vale) style package that helps you write more assertive, action-oriented language by identifying and suggesting alternatives to communal phrasing. Now with **167 comprehensive patterns** (86 communal detections + 81 agentic alternatives) for maximum career impact.
 
 ## What is Agentic Language?
 
@@ -125,18 +125,24 @@ vale --filter='agentic.*' example.md
 ## Rules Reference
 
 ### agentic.communal
-Identifies words and phrases that diminish personal agency:
-- `improved`, `helped`, `managed to`, `eventually`
-- `team player`, `friendly`, `maybe`
-- `seems`, `despite`, `actually`
+Identifies words and phrases that diminish personal agency (86 patterns):
+- **Passive constructions**: `tried to`, `attempted to`, `managed to`, `was able to`, `happened to`
+- **Hedge words**: `maybe`, `perhaps`, `possibly`, `I think`, `I believe`, `I guess`
+- **Minimizing language**: `just`, `simply`, `only`, `merely`, `somehow`, `kind of`, `sort of`
+- **Self-deprecating**: `lucky`, `fortunate`, `by chance`, `accidentally`, `surprisingly`
+- **Apologetic**: `sorry`, `unfortunately`, `sadly`, `I'm afraid`, `wish I could`
+- **Generic descriptors**: `nice`, `friendly`, `sweet`, `accommodating`, `understanding`
+- **Permission-seeking**: `I hope`, `would it be okay`, `if possible`, `would you mind`
+- **Collaborative downplay**: `team effort`, `group achievement`, `shared responsibility`
 
 ### agentic.communal_alternative  
-Suggests stronger alternatives:
-- `help` → `assist`
-- `caring` → `dynamic`
-- `thoughtful` → `energetic`  
-- `facilitated` → `lead`
-- `collaborated` → `created`
+Suggests stronger alternatives (81 mappings):
+- **Agency**: `tried to` → `executed`, `attempted to` → `completed`, `managed to` → `accomplished`
+- **Confidence**: `I think` → `I recommend`, `perhaps` → `recommend`, `maybe` → `suggest`
+- **Ownership**: `team effort` → `I coordinated`, `group achievement` → `I contributed to`
+- **Professionalism**: `nice` → `professional`, `accommodating` → `adaptable`, `understanding` → `empathetic`
+- **Directness**: `unfortunately` → `however`, `sorry` → `recommend`, `I hope` → `I recommend`
+- **Strength**: `lucky` → `strategic`, `by chance` → `through analysis`, `simply` → `directly`
 
 ## Troubleshooting
 
