@@ -1,7 +1,6 @@
 extends: existence
 message: Consider replacing '%s'. It is communal vs agentic.
 level: warning
-code: false
 ignorecase: true
 tokens:
     - improved
