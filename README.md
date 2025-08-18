@@ -167,4 +167,4 @@ Found a communal phrase we missed? Have a better alternative suggestion?
 
 ## License
 
-[MIT](LICENSE) © 2019 errata.ai
+[MIT](LICENSE)
