@@ -3,6 +3,7 @@ message: Consider replacing '%s'. It is communal vs agentic.
 level: warning
 ignorecase: true
 tokens:
+    # Original words
     - improved
     - team player
     - friendly
@@ -19,3 +20,81 @@ tokens:
     - managed to
     - eventually
     - actually
+    # Passive/Hedged Accomplishments
+    - tried to
+    - attempted to
+    - happened to
+    - ended up
+    - was able to
+    - got to
+    - had the opportunity to
+    - found myself
+    - was chosen to
+    - was asked to
+    # Minimizing Personal Contribution
+    - just
+    - simply
+    - only
+    - merely
+    - somehow
+    - a bit
+    - kind of
+    - sort of
+    - a little
+    - somewhat
+    # Uncertainty and Hedge Words
+    - perhaps
+    - possibly
+    - might
+    - could be
+    - appears
+    - tends to
+    - I think
+    - I believe
+    - I guess
+    - I suppose
+    # Self-Deprecating Language
+    - lucky
+    - fortunate
+    - stumbled upon
+    - happened to discover
+    - by chance
+    - accidentally
+    - surprisingly
+    - unexpectedly
+    # Collaborative Downplay
+    - team effort
+    - group achievement
+    - collective success
+    - shared responsibility
+    - joint venture
+    - mutual benefit
+    # Generic/Vague Descriptors
+    - nice
+    - pleasant
+    - sweet
+    - kind
+    - gentle
+    - soft-spoken
+    - agreeable
+    - accommodating
+    - understanding
+    - patient
+    # Apologetic Language
+    - sorry
+    - apologize
+    - regret
+    - unfortunately
+    - sadly
+    - I'm afraid
+    - hate to say
+    - wish I could
+    # Permission-Seeking Language
+    - I hope
+    - would it be okay
+    - if it's alright
+    - could we perhaps
+    - might we consider
+    - would you mind
+    - if possible
+    - if that's okay

@@ -4,6 +4,7 @@ level: warning
 ignorecase: true
 # swap maps tokens in form of bad: good
 swap:
+  # Original mappings
   help: assist
   SME: Service owner
   caring: dynamic
@@ -14,3 +15,76 @@ swap:
   helped: drove
   facilitated: lead
   collaborated: created
+  # Passive/Hedged Accomplishments
+  "tried to": executed
+  "attempted to": completed
+  "happened to": identified
+  "ended up": delivered
+  "was able to": accomplished
+  "got to": selected to
+  "found myself": positioned myself as
+  "was chosen to": earned selection for
+  "was asked to": was selected to
+  # Minimizing Words
+  simply: directly
+  merely: specifically
+  somehow: strategically
+  "kind of": specifically
+  "sort of": precisely
+  "a little": measurably
+  somewhat: substantially
+  # Uncertainty
+  perhaps: recommend
+  possibly: likely
+  "could be": represents
+  appears: indicates
+  "tends to": consistently
+  "I think": "I recommend"
+  "I believe": "I am confident"
+  "I guess": "I estimate"
+  "I suppose": "I conclude"
+  # Self-Deprecating
+  lucky: strategic
+  fortunate: well-prepared
+  "stumbled upon": discovered
+  "happened to discover": researched and found
+  "by chance": through analysis
+  accidentally: during investigation
+  surprisingly: notably
+  unexpectedly: remarkably
+  # Collaborative Downplay
+  "team effort": "I coordinated"
+  "group achievement": "I contributed to"
+  "collective success": "I helped achieve"
+  "shared responsibility": "I managed"
+  "joint venture": "I partnered on"
+  "mutual benefit": "I created value for"
+  # Generic Descriptors
+  nice: professional
+  pleasant: engaging
+  sweet: thoughtful
+  kind: supportive
+  gentle: diplomatic
+  "soft-spoken": articulate
+  agreeable: collaborative
+  accommodating: adaptable
+  understanding: empathetic
+  patient: persistent
+  # Apologetic Language
+  sorry: recommend
+  apologize: acknowledge
+  regret: propose
+  unfortunately: however
+  sadly: significantly
+  "I'm afraid": "I must note"
+  "hate to say": "must acknowledge"
+  "wish I could": "recommend we"
+  # Permission-Seeking
+  "I hope": "I recommend"
+  "would it be okay": "I propose"
+  "if it's alright": "I suggest"
+  "could we perhaps": "I recommend we"
+  "might we consider": "we should evaluate"
+  "would you mind": "please consider"
+  "if possible": "I recommend"
+  "if that's okay": "I propose"
