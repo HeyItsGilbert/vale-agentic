@@ -24,7 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Enhanced coverage for performance reviews, cover letters, and professional communications
 - Comprehensive testing with expanded fixture coverage
 
-## [v1.0.0](https://github.com/HeyItsGilbert/vale-agentic/tree/v1.0.0) (2025-08-18)
+## [v1.0.0](https://github.com/HeyItsGilbert/vale-agentic/tree/v1.0.0) (2023-01-03)
 
 ### Initial Release
 - Initial Vale style package for agentic language detection
