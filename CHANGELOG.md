@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.0.0](https://github.com/HeyItsGilbert/vale-agentic/tree/v2.0.0) (2025-08-18)
+## [2.0.0] 2025-08-18
 
 ### Added
 - Major Features
@@ -23,7 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Enhanced coverage for performance reviews, cover letters, and professional communications
   - Comprehensive testing with expanded fixture coverage
 
-## [v1.0.0](https://github.com/HeyItsGilbert/vale-agentic/tree/v1.0.0) (2023-01-03)
+## [1.0.0] 2023-01-03
 
 ### Added
 - Initial Vale style package for agentic language detection
@@ -32,3 +32,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Support for Vale >= 1.7.0
 - Cucumber test suite with Aruba integration
 - YAML validation and CI pipeline
+
+[2.0.0]: https://github.com/HeyItsGilbert/vale-agentic/tree/v2.0.0
+[1.0.0]: https://github.com/HeyItsGilbert/vale-agentic/tree/v1.0.0
