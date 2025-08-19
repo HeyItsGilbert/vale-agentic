@@ -5,6 +5,11 @@ on:
     tags:
       - v*
   workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Tag to release (e.g., v2.1.0)'
+        required: true
+        type: string
 
 jobs:
   build:
@@ -14,7 +19,21 @@ jobs:
     - name: Get version from tag
       id: tag_name
       run: |
-        echo "current_version=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
+        if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+          # Handle manual dispatch - input should be like 'v2.1.0'
+          TAG_INPUT="${{ github.event.inputs.tag }}"
+          # Ensure it starts with 'v'
+          if [[ "$TAG_INPUT" != v* ]]; then
+            TAG_INPUT="v$TAG_INPUT"
+          fi
+          echo "current_version=${TAG_INPUT#v}" >> $GITHUB_OUTPUT
+          echo "tag_name=$TAG_INPUT" >> $GITHUB_OUTPUT
+        else
+          # Handle tag push - GITHUB_REF is like 'refs/tags/v2.1.0'
+          VERSION="${GITHUB_REF#refs/tags/v}"
+          echo "current_version=$VERSION" >> $GITHUB_OUTPUT
+          echo "tag_name=v$VERSION" >> $GITHUB_OUTPUT
+        fi
     - name: Archive Release
       uses: thedoctor0/zip-release@main
       with:
@@ -35,5 +54,5 @@ jobs:
         body: ${{ steps.changelog_reader.outputs.changes }}
         files: "agentic.zip"
         make_latest: true
-        tag_name: ${{ steps.tag_name.outputs.current_version }}
+        tag_name: ${{ steps.tag_name.outputs.tag_name }}
 
